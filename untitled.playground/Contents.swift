@@ -1,12 +1,5 @@
 import SwiftUI
-
-struct XApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
-    }
-}
+import PlaygroundSupport
 
 struct ContentView: View {
     var body: some View {
@@ -15,8 +8,4 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
+PlaygroundPage.current.setLiveView(ContentView())
